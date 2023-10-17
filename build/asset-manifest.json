@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/meditation-app/static/css/main.e69558f9.css",
+    "main.js": "/meditation-app/static/js/main.dd988931.js",
+    "index.html": "/meditation-app/index.html",
+    "main.e69558f9.css.map": "/meditation-app/static/css/main.e69558f9.css.map",
+    "main.dd988931.js.map": "/meditation-app/static/js/main.dd988931.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e69558f9.css",
+    "static/js/main.dd988931.js"
+  ]
+}
