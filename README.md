@@ -25,17 +25,16 @@ To run this app locally on your machine, please follow these steps:
 
 2. Navigate to the project directory:
 
-$ cd meditation-app
+`cd meditation-app`
 
 
 3. Install the project dependencies using npm or yarn:
 
-   ```bash
-   npm install
-    or
-   yarn install
+`npm install`
+ or
+`yarn install`
 
-5. Start the development server:
+4. Start the development server:
   
 `npm start`
 or
