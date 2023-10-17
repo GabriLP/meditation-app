@@ -12,7 +12,7 @@ Welcome to the Meditation App, a mindfulness application designed to help you re
 
 ## Demo
 
-To see the Meditation App in action, you can check out the [live demo](#) or run it locally by following the installation and usage instructions below.
+To see the Meditation App in action, you can check out the [live demo](https://gabrilp.github.io/meditation-app/) or run it locally by following the installation and usage instructions below.
 
 ## Installation
 
@@ -20,11 +20,13 @@ To run this app locally on your machine, please follow these steps:
 
 1. Clone the repository to your local machine using Git:
 
+   ```bash
    git clone https://github.com/your-username/meditation-app.git
 
 2. Navigate to the project directory:
 
-  cd meditation-app
+$ cd meditation-app
+
 
 3. Install the project dependencies using npm or yarn:
 
