@@ -30,12 +30,14 @@ $ cd meditation-app
 
 3. Install the project dependencies using npm or yarn:
 
+   ```bash
    npm install
     or
    yarn install
 
-4. Start the development server:
+5. Start the development server:
   
+```bash
 npm start
 or
 yarn start
