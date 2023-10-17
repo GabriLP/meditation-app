@@ -37,10 +37,9 @@ $ cd meditation-app
 
 5. Start the development server:
   
-```bash
-npm start
+`npm start`
 or
-yarn start
+`yarn start`
 
 5. The app should now be running locally and accessible at `http://localhost:3000`.
 
