@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Navigate, Routes } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
 import './App.css';
+import Navbar from './components/Navbar/Navbar.js';
+import theme from './theme';
+
+// Import components
+import OnboardingPage from './components/Onboarding/OnboardingPage';
+import MeditationTimer from './components/MeditationTimer/MeditationTimer.js';
+import ProgressTracker from './components/ProgressTracker/ProgressTracker';
+import { SessionProvider } from './components/SessionContext/SessionContext';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+    <SessionProvider>
+      <Router>
+        <div className='root'>
+          <Navbar />
+
+          <Routes>
+            {/* Define your routes here */}
+            <Route path="/" exact element={<OnboardingPage/>} />
+            <Route path="/timer" element={<MeditationTimer/>} />
+            <Route path="/progress" element={<ProgressTracker/>} />
+            {/* Add more routes for other features as needed */}
+
+            {/* Redirect to the onboarding page if the route doesn't match */}
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </div>
+      </Router>
+    </SessionProvider>
+    </ThemeProvider>
   );
 }
 
