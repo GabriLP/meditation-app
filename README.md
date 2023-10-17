@@ -1,6 +1,8 @@
+Here's the improved version of your Meditation App documentation with better styling and formatting:
+
 # Meditation App
 
-Welcome to the Meditation App, a mindfulness application designed to help you relax and meditate with customizable timers and soothing sounds. This app is built using React and leverages React Hooks, React Router, and React Context API, along with Material-UI for styling.
+Welcome to the **Meditation App**, a mindfulness application designed to help you relax and meditate with customizable timers and soothing sounds. This app is built using **React** and leverages **React Hooks**, **React Router**, and **React Context API**, along with **Material-UI** for styling.
 
 ## Table of Contents
 
@@ -12,39 +14,53 @@ Welcome to the Meditation App, a mindfulness application designed to help you re
 
 ## Demo
 
-To see the Meditation App in action, you can check out the [live demo](https://gabrilp.github.io/meditation-app/) or run it locally by following the installation and usage instructions below.
+To see the **Meditation App** in action, you can check out the [live demo](https://gabrilp.github.io/meditation-app/) or run it locally by following the installation and usage instructions below.
 
 ## Installation
 
 To run this app locally on your machine, please follow these steps:
 
 1. Clone the repository to your local machine using Git:
-
+   
    ```bash
    git clone https://github.com/your-username/meditation-app.git
+   ```
 
 2. Navigate to the project directory:
 
-`cd meditation-app`
-
+   ```bash
+   cd meditation-app
+   ```
 
 3. Install the project dependencies using npm or yarn:
 
-`npm install`
- or
-`yarn install`
+   ```bash
+   npm install
+   ```
+
+   or
+
+   ```bash
+   yarn install
+   ```
 
 4. Start the development server:
-  
-`npm start`
-or
-`yarn start`
+
+   ```bash
+   npm start
+   ```
+
+   or
+
+   ```bash
+   yarn start
+   ```
 
 5. The app should now be running locally and accessible at `http://localhost:3000`.
 
 ## Usage
 
-The Meditation App provides a user-friendly interface for your meditation practice:
+The **Meditation App** provides a user-friendly interface for your meditation practice:
 
 1. **Onboarding Page**: When you launch the app, you'll be greeted by an onboarding page. Click "Start Meditation" to proceed.
 
@@ -60,7 +76,7 @@ The Meditation App provides a user-friendly interface for your meditation practi
 
 ## Dependencies
 
-The Meditation App relies on the following dependencies:
+The **Meditation App** relies on the following dependencies:
 
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
 - [React Router](https://reactrouter.com/): A collection of navigational components for React applications.
@@ -71,7 +87,7 @@ Make sure to install these dependencies as mentioned in the installation section
 
 ## Contributing
 
-We welcome contributions to the Meditation App. If you'd like to contribute to this project, please follow these steps:
+We welcome contributions to the **Meditation App**. If you'd like to contribute to this project, please follow these steps:
 
 1. Fork the repository on GitHub.
 2. Create a new branch for your feature or bug fix.
