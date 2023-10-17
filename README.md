@@ -1,5 +1,3 @@
-Here's the improved version of your Meditation App documentation with better styling and formatting:
-
 # Meditation App
 
 Welcome to the **Meditation App**, a mindfulness application designed to help you relax and meditate with customizable timers and soothing sounds. This app is built using **React** and leverages **React Hooks**, **React Router**, and **React Context API**, along with **Material-UI** for styling.
