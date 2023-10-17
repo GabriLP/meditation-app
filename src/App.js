@@ -17,7 +17,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <SessionProvider>
-      <Router>
+      <Router basename='/meditation-app'>
         <div className='root'>
           <Navbar />
 
@@ -29,7 +29,7 @@ function App() {
             {/* Add more routes for other features as needed */}
 
             {/* Redirect to the onboarding page if the route doesn't match */}
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="*" element={<Navigate to="/meditation-app" />} />
           </Routes>
         </div>
       </Router>
