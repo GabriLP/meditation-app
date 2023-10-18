@@ -1,6 +1,6 @@
-# Meditation App
+# restful mindspace
 
-Welcome to the **Meditation App**, a mindfulness application designed to help you relax and meditate with customizable timers and soothing sounds. This app is built using **React** and leverages **React Hooks**, **React Router**, and **React Context API**, along with **Material-UI** for styling.
+Welcome to **restful mindspace**, a mindfulness application designed to help you relax and meditate with customizable timers and soothing sounds. This app is built using **React** and leverages **React Hooks**, **React Router**, and **React Context API**, along with **Material-UI** for styling.
 
 ## Table of Contents
 
