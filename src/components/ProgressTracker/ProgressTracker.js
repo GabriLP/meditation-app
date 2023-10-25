@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useSessionContext } from '../SessionContext/SessionContext';
 import { makeStyles } from '@mui/styles';
 import { Paper, Typography, Container } from '@mui/material';
@@ -28,6 +29,9 @@ const ProgressTracker = () => {
 
   return (
     <Paper className={classes.progressTracker} elevation={3}>
+    <Helmet>
+    <title>Progress Tracker</title>
+    </Helmet>
       <Typography variant="h4">Meditation Progress Tracker</Typography>
       {sessionData.length === 0 ? (
         <Typography>No meditation sessions recorded yet.</Typography>

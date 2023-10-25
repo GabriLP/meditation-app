@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -61,6 +62,9 @@ const OnboardingPage = () => {
       case 1:
         return (
           <Container className={classes.header}>
+            <Helmet>
+            <title>restful mindspace</title>
+            </Helmet>
             <Typography variant="h1">Welcome to restful mindspace</Typography>
             <Typography variant="body1">
               Discover inner peace and mindfulness with our guided meditation sessions.
