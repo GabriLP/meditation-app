@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useSessionContext } from '../SessionContext/SessionContext';
+import { Helmet } from 'react-helmet';
 import CongratulationMessage from '../CongratulationMessage/CongratulationMessage';
 import TimerSettings from '../TimerSettings/TimerSettings';
 import TimerDisplay from '../TimerDisplay/TimerDisplay';
@@ -157,33 +158,36 @@ const [selectedAudio, setSelectedAudio] = useState(initialSelectedAudio);
 
   return (
     <Container>
-      <Paper elevation={5}  className={classes.medContainer}>
-        {showCongratulation && <CongratulationMessage />}
+      <Helmet>
+      <title>Session Duration</title>
+      </Helmet>
+        <Paper elevation={5}  className={classes.medContainer}>
+          {showCongratulation && <CongratulationMessage />}
 
-        <Typography variant='h2'>Meditation Timer</Typography>
-        
-        <TimerSettings
-          sessionDuration={sessionDuration}
-          handleMinutesChange={handleMinutesChange}
-          handleSecondsChange={handleSecondsChange}
-        />
-        <TimerDisplay
-          sessionDuration={sessionDuration}
-          currentTime={currentTime}
-          progress={progress}
-          audioSources={audioSources}
-          selectedAudio={selectedAudio}
-          timerActive={timerActive}
-          setSelectedAudio={setSelectedAudio}
-          sourceLabelMapping={sourceLabelMapping}
-        />
-        <TimerControls
-          timerActive={timerActive}
-          startTimer={startTimer}
-          pauseTimer={pauseTimer}
-          resetTimer={resetTimer}
-        />
-      </Paper>
+          <Typography variant='h2'>Meditation Timer</Typography>
+          
+          <TimerSettings
+            sessionDuration={sessionDuration}
+            handleMinutesChange={handleMinutesChange}
+            handleSecondsChange={handleSecondsChange}
+          />
+          <TimerDisplay
+            sessionDuration={sessionDuration}
+            currentTime={currentTime}
+            progress={progress}
+            audioSources={audioSources}
+            selectedAudio={selectedAudio}
+            timerActive={timerActive}
+            setSelectedAudio={setSelectedAudio}
+            sourceLabelMapping={sourceLabelMapping}
+          />
+          <TimerControls
+            timerActive={timerActive}
+            startTimer={startTimer}
+            pauseTimer={pauseTimer}
+            resetTimer={resetTimer}
+          />
+        </Paper>
     </Container>
   );
 };
